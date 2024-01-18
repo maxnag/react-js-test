@@ -1,8 +1,13 @@
+const pkg = require('./package.json');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   generateBuildId: async () => {
-    // This could be anything, using the latest git hash
-    return process.env.GIT_HASH;
+    const commitHash = require('child_process')
+      .execSync('git log --pretty=format:"%h" -n1')
+      .toString()
+      .trim();
+
+    return `${pkg.version}-${commitHash}`;
   },
   experimental: {
     forceSwcTransforms: true,
