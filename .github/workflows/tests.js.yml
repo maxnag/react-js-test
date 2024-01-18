@@ -31,7 +31,7 @@ jobs:
         run: npm ci && npm run build
 
       - name: Start App
-        run: npm run start
+        run: nohup npm run start &
 
       - name: Run E2E tests in the Chrome browser
         uses: cypress-io/github-action@v6
