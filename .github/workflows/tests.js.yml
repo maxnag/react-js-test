@@ -37,7 +37,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           working-directory: .
-          config: defaultCommandTimeout=10000,video=true,retries=2
+          config: defaultCommandTimeout=10000,video=true,retries=2,baseUrl=http://localhost:3000
           browser: chrome
           quiet: true
 
