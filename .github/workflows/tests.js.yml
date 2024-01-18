@@ -33,6 +33,9 @@ jobs:
       - name: Start App
         run: nohup npm run start &
 
+      - name: Run Unit tests
+        run: npm run test:unit
+
       - name: Run E2E tests in the Chrome browser
         uses: cypress-io/github-action@v6
         with:
