@@ -25,19 +25,22 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: "**/package-lock.json"
+          cache-dependency-path: '**/package-lock.json'
 
       - name: Install NPM packages and build
         run: npm ci && npm run build
 
       - name: Start App
-        run: npm run start
+        run: nohup npm run start &
+
+      - name: Run Unit tests
+        run: npm run test:unit
 
       - name: Run E2E tests in the Chrome browser
         uses: cypress-io/github-action@v6
         with:
           working-directory: .
-          config: defaultCommandTimeout=10000,video=true,retries=2
+          config: defaultCommandTimeout=10000,video=true,retries=2,baseUrl=http://localhost:3000
           browser: chrome
           quiet: true
 

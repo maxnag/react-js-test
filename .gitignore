@@ -38,6 +38,7 @@ sketch
 
 # production
 /build
+nohup.out
 
 # misc
 .DS_Store
