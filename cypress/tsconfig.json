@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "types": ["cypress", "node", "./support"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["../cypress.config.ts", "../node_modules"],
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
+  "module": "commonjs"
+}

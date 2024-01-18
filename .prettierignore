@@ -1,0 +1,4 @@
+coverage
+.next
+.run
+node_modules
