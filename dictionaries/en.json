@@ -1,0 +1,34 @@
+{
+  "main": {
+    "metadata": {
+      "title": "Home routine",
+      "description": "Home routine application, organize your routine"
+    },
+    "header": "Main page"
+  },
+  "login": {
+    "metadata": {
+      "title": "Login | Home routine",
+      "description": "login, auth"
+    },
+    "header": "Login",
+    "link": "login",
+    "return-home": "return home"
+  },
+  "logout": {
+    "metadata": {
+      "title": "Logout | Home routine",
+      "description": "logout, auth"
+    },
+    "header": "Logout",
+    "link": "logout",
+    "return-home": "return home"
+  },
+  "not-found": {
+    "metadata": {
+      "title": "Page not found | Home routine",
+      "description": "404, not found"
+    },
+    "return-home": "return home"
+  }
+}

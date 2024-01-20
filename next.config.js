@@ -9,6 +9,7 @@ const nextConfig = {
   experimental: {
     forceSwcTransforms: true,
   },
+  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;

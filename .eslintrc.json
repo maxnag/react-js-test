@@ -20,9 +20,13 @@
     "cypress/no-async-tests": "error",
     "cypress/no-pause": "error",
     "no-unused-expressions": 0,
-    "chai-friendly/no-unused-expressions": 2
+    "chai-friendly/no-unused-expressions": 2,
+    "jest-dom/prefer-checked": "error",
+    "jest-dom/prefer-enabled-disabled": "error",
+    "jest-dom/prefer-required": "error",
+    "jest-dom/prefer-to-have-attribute": "error"
   },
-  "plugins": ["cypress", "chai-friendly"],
+  "plugins": ["cypress", "chai-friendly", "jest-dom"],
   "env": {
     "cypress/globals": true,
     "es6": true,

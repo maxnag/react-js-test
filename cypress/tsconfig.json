@@ -3,9 +3,9 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "dom"],
-    "types": ["cypress", "node", "./support"]
+    "types": ["cypress", "node", "./support", "@testing-library/jest-dom"]
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.tsx"],
   "exclude": ["../cypress.config.ts", "../node_modules"],
   "resolveJsonModule": true,
   "esModuleInterop": true,
