@@ -25,5 +25,5 @@ export default async function Login({ params }: { params: { lang: Locale } }): P
         <Link href={'/' + params.lang}>{dict.login['return-home']}</Link>
       </Suspense>
     </main>
-  )
+  );
 }

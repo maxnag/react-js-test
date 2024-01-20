@@ -21,7 +21,7 @@ async function resolvedComponent(Component: any, props: any): Promise<() => any>
 describe('Login', () => {
   it('renders a heading', async () => {
     const TagResolved = await resolvedComponent(Login, {
-      params: {lang: i18n.defaultLocale},
+      params: { lang: i18n.defaultLocale },
     });
 
     render(<TagResolved />);
