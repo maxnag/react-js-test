@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "bump:patch": "npm version patch --no-git-tag-version",
     "dev": "next dev",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
@@ -19,7 +20,8 @@
   },
   "pre-commit": [
     "lint",
-    "format:fix"
+    "format:fix",
+    "bump:patch"
   ],
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5",
@@ -40,7 +42,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^29.7",
     "cypress": "^13.6",
     "eslint": "^8",
     "eslint-config-next": "^14.1",
