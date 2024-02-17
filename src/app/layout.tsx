@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import type { NextFont } from 'next/dist/compiled/@next/font';
 import { Inter } from 'next/font/google';
 
-import './[lang]/globals.css';
+import './globals.css';
 import { i18n, type Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
 

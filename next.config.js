@@ -6,6 +6,9 @@ const nextConfig = {
 
     return `${pkg.version}-${commitHash}`;
   },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
   experimental: {
     forceSwcTransforms: true,
   },
